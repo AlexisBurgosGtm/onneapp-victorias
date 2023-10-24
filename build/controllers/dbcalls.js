@@ -131,13 +131,15 @@ document.getElementById('btnDownloadClientes').addEventListener('click',()=>{
                 .catch(()=>{
                     hideWaitForm();
                     //$('#modalWait').modal('hide');
-                    funciones.AvisoError('No se pudieron eliminar los Clientes previos')
+                    funciones.AvisoError('No se pudieron eliminar los Clientes previos');
+                    fcn_get_mun_deptos();
                 })
             })
             .catch(()=>{
                 hideWaitForm();
                 //$('#modalWait').modal('hide');
-                funciones.AvisoError('No se pudieron descargar los clientes')
+                funciones.AvisoError('No se pudieron descargar los clientes');
+                fcn_get_mun_deptos();
             })
                   
             

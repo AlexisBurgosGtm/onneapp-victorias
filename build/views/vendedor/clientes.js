@@ -979,6 +979,7 @@ async function addListeners(){
                         funciones.AvisoError('No se pudieron eliminar los Clientes previos');
                         btnDescargarC.disabled = false;
                         btnDescargarC.innerHTML = `<i class="fal fa-download"></i>`;
+                        fcn_get_mun_deptos();
                     })
                 })
                 .catch(()=>{
@@ -986,6 +987,7 @@ async function addListeners(){
                     funciones.AvisoError('No se pudieron descargar los clientes');
                     btnDescargarC.disabled = false;
                     btnDescargarC.innerHTML = `<i class="fal fa-download"></i>`;
+                    fcn_get_mun_deptos();
                 })
                       
                 
